@@ -147,7 +147,7 @@ const handlePrev = () => {
           <div className="photo-frame group-photo">
           <div className="photo-container">
               <img 
-                src="/imagenes/fotoGrupal.jpeg" // Ruta de la foto grupal
+                src="/imagenes/FotoGrupa.jpeg" // Ruta de la foto grupal
                 alt="Equipo de trabajo"
               />
             </div>
