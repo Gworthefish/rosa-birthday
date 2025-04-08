@@ -58,6 +58,12 @@ export default function BirthdayPage() {
       message: "Gracias por tu apoyo diario ❤️",
       photo: "/imagenes/Yei.jpeg"
     },
+    {
+      id: 9,
+      name: "Jorge",
+      message: "Gracias por tu apoyo diario ❤️",
+      photo: "/imagenes/Jorge.jpeg"
+    },
     
     // ... añade los otros 15 objetos igualmente
   ];
