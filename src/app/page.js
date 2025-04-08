@@ -17,12 +17,6 @@ export default function BirthdayPage() {
       photo: "/imagenes/fabian.png"  // Ruta relativa desde la carpeta public
     },
     { 
-      id: 2, 
-      name: "Freddy", 
-      message: "Gracias por tu apoyo diario ❤️",
-      photo: "/imagenes/Freddy.jpeg"
-    },
-    { 
       id: 3, 
       name: "Natasha", 
       message: "Feliz cumpleaños se le quiere y aprecia un montón 🤍",
@@ -31,26 +25,26 @@ export default function BirthdayPage() {
     { 
       id: 4, 
       name: "Lis", 
-      message: "Gracias por tu apoyo diario ❤️",
+      message: "Felicidades a la bibliotecóloga más sexi y noble. Te quiero muchísimo Rosita.",
       photo: "/imagenes/Lis.jpeg"
     },
     {
       id: 5,
       name: "Mauren",
-      message: "Gracias por tu apoyo diario ❤️",
+      message: "Rositaa te deseo lo mejor de lo mejor en este día tan especial tqm y Cumplas mil más 🎉🌹bendiciones",
       photo: "/imagenes/Mauren.jpeg"
     },
     {
       id: 6,
       name: "Franco",
-      message: "Gracias por tu apoyo diario ❤️",
+      message: "Feliz cumpleaños estúpida",
       photo: "/imagenes/Franco.jpeg"
     },
     {
       id: 7,
       name: "Leslie",
-      message: "Gracias por tu apoyo diario ❤️",
-      photo: "/imagenes/Leslie.jpeg"
+      message: "Que la luz del Señor te ilumine y te conceda felicidad en este cumpleaños y por muchos años más",
+      photo: "/imagenes/Leslie.jpg"
     },
     {
       id: 8,
@@ -60,10 +54,17 @@ export default function BirthdayPage() {
     },
     {
       id: 9,
-      name: "Jorge",
-      message: "Gracias por tu apoyo diario ❤️",
-      photo: "/imagenes/Jorge.jpeg"
+      name: "Magaly",
+      message: "Ro! Que este año que viene seas muy feliz y que te vida esté llena de grandes alegrías, te quiero mucho",
+      photo: "/imagenes/Magaly.jpeg"
     },
+    {
+      id: 10,
+      name: "Maria",
+      message: "Feliz cumpleaños Rosita!! Que Dios te bendiga y te dé muchísimos años más. Eres un ser de luz.",
+      photo: "/imagenes/Maria.jpeg"
+    },
+    
     
     // ... añade los otros 15 objetos igualmente
   ];
@@ -165,7 +166,8 @@ const handlePrev = () => {
                   alt={teamMessages[currentPhoto].name}
                 />
                 </div>
-                <p className="personal-message">"{teamMessages[currentPhoto].message}"Atte: {teamMessages[currentPhoto].name} </p>
+                <p className="personal-message">"{teamMessages[currentPhoto].message}" </p>
+                <p className="personal-message">Atte: {teamMessages[currentPhoto].name}</p>
             </div>
             <div className="navigation-buttons">
             <button onClick={handlePrev} className="nav-button">
