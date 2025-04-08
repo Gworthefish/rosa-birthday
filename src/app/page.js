@@ -25,7 +25,7 @@ export default function BirthdayPage() {
     { 
       id: 3, 
       name: "Natasha", 
-      message: "Gracias por tu apoyo diario ❤️",
+      message: "Feliz cumpleaños se le quiere y aprecia un montón 🤍",
       photo: "/imagenes/Natasha.jpeg"
     },
     { 
