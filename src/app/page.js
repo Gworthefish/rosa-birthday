@@ -12,16 +12,53 @@ export default function BirthdayPage() {
   const teamMessages = [
     { 
       id: 1, 
-      name: "Ana", 
-      message: "¡Rosa, eres increíble trabajando!",
+      name: "Fabian", 
+      message: "Eres la mejor compañera de trabajo, siempre dispuesta a ayudar y a compartir tus conocimientos. ¡Feliz cumpleaños! 🎂",
       photo: "/imagenes/fabian.png"  // Ruta relativa desde la carpeta public
     },
     { 
       id: 2, 
-      name: "Carlos", 
+      name: "Freddy", 
       message: "Gracias por tu apoyo diario ❤️",
-      photo: "/imagenes/Freddy.png"
+      photo: "/imagenes/Freddy.jpeg"
     },
+    { 
+      id: 3, 
+      name: "Natasha", 
+      message: "Gracias por tu apoyo diario ❤️",
+      photo: "/imagenes/Natasha.jpeg"
+    },
+    { 
+      id: 4, 
+      name: "Lis", 
+      message: "Gracias por tu apoyo diario ❤️",
+      photo: "/imagenes/Lis.jpeg"
+    },
+    {
+      id: 5,
+      name: "Mauren",
+      message: "Gracias por tu apoyo diario ❤️",
+      photo: "/imagenes/Mauren.jpeg"
+    },
+    {
+      id: 6,
+      name: "Franco",
+      message: "Gracias por tu apoyo diario ❤️",
+      photo: "/imagenes/Franco.jpeg"
+    },
+    {
+      id: 7,
+      name: "Leslie",
+      message: "Gracias por tu apoyo diario ❤️",
+      photo: "/imagenes/Leslie.jpeg"
+    },
+    {
+      id: 8,
+      name: "Yei",
+      message: "Gracias por tu apoyo diario ❤️",
+      photo: "/imagenes/Yei.jpeg"
+    },
+    
     // ... añade los otros 15 objetos igualmente
   ];
 
@@ -41,16 +78,16 @@ export default function BirthdayPage() {
   }
 };
 
-// Efecto para el confeti inicial
+
 useEffect(() => {
   createConfetti();
 }, []);
 
-// Efecto cuando triggerConfetti cambia
+
 useEffect(() => {
   if (triggerConfetti) {
     createConfetti();
-    setTriggerConfetti(false); // Resetea el trigger
+    setTriggerConfetti(false); 
   }
 }, [triggerConfetti]);
 
@@ -104,7 +141,7 @@ const handlePrev = () => {
           <div className="photo-frame group-photo">
           <div className="photo-container">
               <img 
-                src="/images/foto-grupal.jpg"
+                src="/imagenes/fotoGrupal.jpeg" // Ruta de la foto grupal
                 alt="Equipo de trabajo"
               />
             </div>
@@ -122,7 +159,7 @@ const handlePrev = () => {
                   alt={teamMessages[currentPhoto].name}
                 />
                 </div>
-                <p className="personal-message">"{teamMessages[currentPhoto].message}"</p>
+                <p className="personal-message">"{teamMessages[currentPhoto].message}"Atte: {teamMessages[currentPhoto].name} </p>
             </div>
             <div className="navigation-buttons">
             <button onClick={handlePrev} className="nav-button">
